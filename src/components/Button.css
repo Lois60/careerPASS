@@ -1,0 +1,18 @@
+.customhead-bottom {
+  font-family: "Montserrat";
+  width: 178px;
+  height: 44px;
+  border: none;
+  border-radius: 20px 0px 20px 0px;
+  opacity: 0px;
+  color: white;
+  background-color: #74147c;
+}
+@media screen and (max-width: 768px) {
+    .customhead-bottom {
+      width: 100%; /* Make the width 100% for smaller screens */
+      height: 40px; /* Adjust height for smaller screens */
+      border-radius: 20px; /* Adjust border radius for smaller screens */
+      margin-top: 10px; /* Add margin to separate from other elements */
+    }
+  }
