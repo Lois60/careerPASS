@@ -1,0 +1,27 @@
+.records {
+  display: flex;
+
+  height: 300px;
+}
+.records .record-container {
+  display: flex;
+  gap: 200px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.records .record-container h3 {
+  font-family: "Montserrat";
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 69.6px;
+  text-align: left;
+}
+
+.records .record-container p {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: -30px;
+}

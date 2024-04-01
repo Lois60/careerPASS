@@ -1,0 +1,34 @@
+/* HeroSection.css */
+
+.hero-section {
+  text-align: center; 
+  height: 400px; 
+  margin: 0 auto; 
+  overflow: hidden;
+  background: linear-gradient(to bottom, #f0dbf2, #bb96BE);
+  font-family: "Montserrat";
+}
+
+.hero-content {
+  margin-top: 120px;
+}
+
+.hero-title {
+  color: #74147c;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.hero-content p {
+margin-top: -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+}
