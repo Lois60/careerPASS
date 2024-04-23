@@ -1,0 +1,30 @@
+.thank-you-container {
+    display: flex;
+    align-items: center; 
+    font-family: 'poppins';
+    
+}
+
+.image-container {
+    flex: 1;
+    width: 80%;
+}
+
+.text-container {
+    flex: 1; 
+    padding: 0 20px;
+    text-align: center;
+    margin-right: 50px;
+    font-family: 'poppins';
+}
+ .continue-thank{
+    margin-top: 10px;
+     background-color:  #74147c;
+    font-family: 'poppins';
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 10px;
+ }
+
+ 

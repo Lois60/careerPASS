@@ -1,0 +1,1 @@
+export const BASE_URL = "https://psychometric-assessment-6di1.onrender.com";

@@ -1,27 +1,41 @@
 .records {
   display: flex;
-
+background-color: #F9F7F7;
   height: 300px;
 }
 .records .record-container {
   display: flex;
   gap: 200px;
   align-items: center;
+  padding: 0;
   justify-content: space-between;
   margin: 0 auto;
+  
+  
 }
 .records .record-container h3 {
-  font-family: "Montserrat";
-  font-size: 28px;
+  font-family: 'poppins';
+  font-size: 26px;
   font-weight: 600;
   line-height: 69.6px;
-  text-align: left;
+  text-align: center;
 }
 
 .records .record-container p {
-  font-family: Montserrat;
-  font-size: 20px;
+  font-family: 'poppins';
+  font-size: 18px;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
   margin-top: -30px;
+}
+.icon-record{
+  align-items: center;
+  margin-left: 50px;
+ font-size: 35px;
+}
+.record-heading {
+  margin-top: -14px;
+}
+.record-para{
+margin-top: -25px;
 }

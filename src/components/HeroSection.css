@@ -1,12 +1,12 @@
-/* HeroSection.css */
 
-.hero-section {
+
+/* .hero-section {
   text-align: center; 
-  height: 400px; 
+  height: 450px; 
   margin: 0 auto; 
   overflow: hidden;
-  background: linear-gradient(to bottom, #f0dbf2, #bb96BE);
-  font-family: "Montserrat";
+  
+  font-family: 'poppins';
 }
 
 .hero-content {
@@ -31,4 +31,60 @@ margin-top: -20px;
   .hero-content p {
     font-size: 14px;
   }
+} */
+
+/* HeroSection.css */
+
+/* HeroSection.css */
+
+.hero-section {
+  background-image:url('../components/HeroImage.jpeg'); /* Path to your image in the public folder */
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'poppins';
+}
+
+.hero-content {
+  font-family: 'poppins';
+  color: white;
+  position: absolute;
+  left: 80px;
+    z-index: 2;
+}
+.hero-content h1{
+  line-height: 2.5rem;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.6); 
+  z-index: 1; 
+}
+.hero-btn{
+font-family: 'poppins';
+  width: 178px;
+  height: 44px;
+  border: none;
+  border-radius: 5px;
+  opacity: 0px;
+  color: white;
+  background-color: #74147c;
+  position: absolute;
+  cursor: pointer;
+ 
+}
+.arrow{
+ position: relative;
+ margin-left: 150px;
+ margin-top: 15px;
 }

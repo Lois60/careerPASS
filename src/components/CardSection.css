@@ -1,0 +1,56 @@
+.card-section{
+    background-color: #E3D0E5;
+    height: 2500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ 
+
+}
+
+.card-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -50px;
+    
+}
+
+.card-3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -50px;
+    
+}
+
+.card-4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: -50px;
+    
+    
+}
+
+.call-action{
+    margin-top: -800px;
+    margin-left: 50px;
+}
+.class-title{
+    color: #121212;
+  
+    font-family: 'poppins';
+font-size: 30px;
+font-weight: 600;
+
+
+}
+.class-text{
+    font-family: 'poppins';
+font-size: 14px;
+font-weight: 500;
+line-height: 21.6px;
+text-align: left;
+
+}

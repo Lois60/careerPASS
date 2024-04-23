@@ -1,0 +1,61 @@
+.contact-header{
+    background-color: #1E0B20;
+    height: 250px;
+  overflow: hidden;
+padding-top: 10px;
+font-family: 'poppins';
+
+}
+.contact-item{
+    margin-top: 40px;
+    color: white;
+    margin-left: 70px;
+    font-family: 'poppins';
+}
+
+.contact-item h1{
+    font-size: 30px;
+    font-family: 'poppins';
+   
+}
+
+.contact-form{
+    margin-left: 70px;
+    margin-top: 30px;
+    
+    .label-text{
+        font-family: 'poppins';
+        font-size: 15px;
+    }
+
+
+
+}
+
+.contact-form input{
+   width: 80%;
+   padding: 10px;
+   border-radius: 20px;
+   border: 1px solid #74147C;
+}
+.submit-btn{
+    padding: 10px 15px;
+    margin-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    color: white;
+    background-color:  #74147c;
+    font-family: 'poppins';
+    font-weight: bold;
+    border: none;
+  border-radius: 4px;
+}
+
+.textarea{
+    /* padding: 50px; */
+    border: 1px solid #74147C;
+     width: 80%;
+   padding: 10px;
+   border-radius: 20px;
+   font-family: 'poppins';
+}

@@ -1,3 +1,8 @@
+
+import { FaUsers } from "react-icons/fa";
+import { FaAward } from "react-icons/fa";
+import { FaHandshake } from "react-icons/fa6";
+
 import "./Record.css";
 
 export const Record = () => {
@@ -5,17 +10,27 @@ export const Record = () => {
     <section className="records">
       <div className="record-container">
         <div className="record-items">
-          <h3>90%</h3>
-          <p>Result Rated as <br /> Accurate</p>
-        </div>   
+          <FaAward className="icon-record" />
+          <h3 className="record-heading">90%</h3>
+          <p className="record-para">
+            Result Rated as <br /> Accurate
+          </p>
+        </div>
         <div className="record-items">
-          <h3>9,761+</h3>
-          <p>Training Program <br /> Beneficiaries</p>
-          </div>
-          <div className="record-items">
-          <h3>81,170+</h3>
-          <p>Advocacy <br />Program <br /> Beneficiaries</p>
-          </div>
+          <FaUsers className="icon-record" />
+          <h3 className="record-heading">9,761+</h3>
+          <p className="record-para">
+            Training Program <br /> Beneficiaries
+          </p>
+        </div>
+        <div className="record-items">
+          <FaHandshake className="icon-record" />
+          <h3 className="record-heading">81,170+</h3>
+          <p className="record-para">
+            Advocacy <br />
+            Program <br /> Beneficiaries
+          </p>
+        </div>
       </div>
     </section>
   );

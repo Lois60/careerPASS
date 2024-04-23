@@ -1,0 +1,30 @@
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    font-family: 'poppins';
+    padding: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    margin-right: 20px;
+    padding-left: 40px;
+    /* margin-left: 20px; */
+  }
+  
+  .column:last-child {
+    margin-right:0;
+  }
+  
+  .column h5 {
+    margin-bottom: 10px;
+    font-size: 12px;
+   font-weight: 500;
+
+  }
+  .column a{
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+  }

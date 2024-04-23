@@ -1,0 +1,66 @@
+.about-pic {
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin-left: -5px;
+ 
+  
+}
+
+.welcome-about {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  /* margin-top: -70px; */
+  width: 30%;
+}
+
+.welcome-about .welcome-text {
+  background-color: white;
+  position: absolute;
+  margin-top: -165px;
+  margin-right: 60px;
+  font-family: 'poppins';
+  /* padding: 20px 20px; */
+  width: 500px;
+  border-radius: 10px 0 10px 0;
+  color: #74147c;
+  font-size: larger;
+  font-weight: bolder;
+  /* height: 177px; */
+}
+
+.about-para  {
+  text-align: left;
+  padding-left: 70px;
+  font-size: 15px;
+  color: #414141;
+  font-family: 'poppins';
+
+}
+
+.welcome-text h2 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'poppins';
+}
+.sec-title{
+    text-align: left;
+  padding-left: 70px;
+  color: #414141;
+  font-size: 17px;
+  font-family: 'poppins';
+
+}
+
+.learn-btn{
+    padding: 10px;
+    margin-left: 70px;
+    margin-bottom: 70px;
+    color: white;
+    background-color:  #74147c;
+    font-family: 'poppins';
+    font-weight: bold;
+    border: none;
+  border-radius: 20px 0px 20px 0px;
+}
