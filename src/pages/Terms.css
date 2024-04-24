@@ -15,16 +15,24 @@
 }
 
 .terms-header h4 {
-    margin-left: 70px;
+    margin-left: 60px;
      font-size: 30px;
 }
 
 .terms-header p{
-    margin-left: 70px;
+    margin-left: 60px;
 }
 .con-text{
-    margin-left: 70px;
+    margin-left: 60px;
+
+
+}
+.terms-cons{
+    padding-bottom: 20px;
 
 
 }
 
+.con-text li{
+    margin-top: -20px;
+}

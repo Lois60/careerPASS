@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
 import { IoIosArrowBack } from "react-icons/io";
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 
 export const ContactUs = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     full_name: "",
     email: "",

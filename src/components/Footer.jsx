@@ -41,7 +41,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="foot-pri">
-        <span>Privacy Policy</span>
+        <span> Privacy Policy</span>
 
         <span className="pri-span">Terms & Conditions</span>
       </div>
