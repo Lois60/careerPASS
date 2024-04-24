@@ -2,14 +2,14 @@
 .header {
   padding: 10px 20px;
   background-color: white;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+ 
 
   height:6Opx; 
 
   top: 25px;
   left: 109px;
   gap: 105px;
-  opacity: 0px;
+ 
   overflow: hidden;
 }
 

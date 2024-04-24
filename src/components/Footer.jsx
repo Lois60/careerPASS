@@ -17,7 +17,10 @@ export const Footer = () => {
           CareerPASS
         </Link>
         <div className="column">
-          <h4>Contact us</h4>
+          <h4>
+            {" "}
+            <Link to="/Contact-Us">Contact us</Link>
+          </h4>
           <h6>
             <a href="mailto:Wtfellowship@tech4dev.com">
               <IoIosMail size={10} color="#918D92" /> Wtfellowship@tech4dev.com

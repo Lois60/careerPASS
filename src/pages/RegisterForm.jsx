@@ -100,7 +100,7 @@ export const RegisterForm = () => {
             />
             <span className="checkmark"></span>
             <span className="agree-text">I agree to the </span>
-            <a href="/terms" target="_blank">
+            <a href="/Terms" target="_blank">
               terms and conditions
             </a>
           </label>

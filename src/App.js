@@ -16,8 +16,9 @@ import { Magination } from "./pages/Magination.jsx";
 import { TechnicalAptitude } from "./pages/TechnicalAptitude.jsx";
 import { SkillsAssessment } from "./pages/SkillsAssessment.jsx";
 import { RegisterForm } from "./pages/RegisterForm.jsx";
-import { LoginForm } from "./pages/LoginForm.jsx";
+
 import { ThankYou } from "./pages/ThankYou.jsx";
+import { Terms } from "./pages/Terms.jsx";
 import { Recommendations } from "./pages/Recommendations.jsx";
 
 
@@ -44,10 +45,11 @@ const router = createBrowserRouter(
       <Route path="/TechnicalAptitude" element={<TechnicalAptitude />} />
       <Route path="/SkillsAssessment" element={<SkillsAssessment />} />
       <Route path="/RegisterForm" element={<RegisterForm />} />
-      <Route path="/LoginForm" element={<LoginForm />} />
+     
       <Route path="/ThankYou" element={<ThankYou />} />
+      <Route path="/Terms" element={<Terms />} />
 
-      {/* <Route path="/Register" element={<Register />} /> */}
+      
     </Route>
   )
 );

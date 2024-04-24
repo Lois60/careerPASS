@@ -49,7 +49,7 @@ export const ContactUs = () => {
       console.log("Form submitted:", formData);
       setSubmissionStatus("success");
       setTimeout(() => {
-        navigate("/ThankYou"); // Navigate to ThankYou page
+        navigate("/ThankYou");
       }, 4000);
       setFormData({
         full_name: "",
