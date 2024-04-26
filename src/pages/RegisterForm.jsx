@@ -45,7 +45,7 @@ export const RegisterForm = () => {
 					navigate("/TakeAssessment");
 				}, 4000);
 			} else {
-				setSuccessMessage("Registration failed. Please try again.");
+				setSuccessMessage("This User has already taken the assessment try again in 6 months!");
 			}
 		} catch (error) {
 		} finally {

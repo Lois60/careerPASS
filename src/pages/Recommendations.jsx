@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { BASE_URL } from "../utils/Constants";
-import "./Recommendations.css"
 
 export const Recommendations = () => {
   const navigate = useNavigate();
@@ -27,9 +26,10 @@ export const Recommendations = () => {
         }
       );
       const result = await response.json();
+      console.log("logicresult*****", result);
       setLogicResult(result);
     } catch (error) {
-      console.error("Error fetching logic recommendations:", error);
+      console.error("Error submitting logic assessment:", error);
     }
   };
 
@@ -50,9 +50,10 @@ export const Recommendations = () => {
         }),
       });
       const result = await response.json();
+      console.log("personalityresult****", result);
       setPersonalityResult(result);
     } catch (error) {
-      console.error("Error fetching personality recommendations:", error);
+      console.error("Error submitting personality assessment:", error);
     }
   };
 
@@ -62,29 +63,21 @@ export const Recommendations = () => {
   }, []);
 
   return (
-	<section className="reco-scores">
-        <div className="reco-header">
-          <h1>Welcome to your Psychometric Assessment Results</h1>
-          <p>
-            Thank you for participating in our psychometric assessment. This
-            report is tailored to provide you with valuable insights into your
-            cognitive abilities, personality traits, technical skills, and
-            interests based on your responses. <br /> <br /> Below you’ll find a
-            detailed breakdown of your assessment results, organized into
-            sections. Each section offers a comprehensive analysis of your
-            performance.
-          </p>
-
-   
-      <div>
-        Logic Result:
-        <pre>{JSON.stringify(logicResult, null, 2)}</pre>
-      </div>
-      <div>
-        Personality Result:
-        <pre>{JSON.stringify(personalityResult, null, 2)}</pre>
-      </div>
+    <div>
+      {logicResult && (
+        <div>
+          <h2>Logic Result</h2>
+        
+          <pre>{JSON.stringify(logicResult, null, 2)}</pre>
+        </div>
+      )}
+      {personalityResult && (
+        <div>
+          <h2>Personality Result</h2>
+       
+          <pre>{JSON.stringify(personalityResult, null, 2)}</pre>
+        </div>
+      )}
     </div>
-	</section>
   );
 };

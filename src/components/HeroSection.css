@@ -1,47 +1,10 @@
 
 
-/* .hero-section {
-  text-align: center; 
-  height: 450px; 
-  margin: 0 auto; 
-  overflow: hidden;
-  
-  font-family: 'poppins';
-}
-
-.hero-content {
-  margin-top: 120px;
-}
-
-.hero-title {
-  color: #74147c;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.hero-content p {
-margin-top: -20px;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-title {
-    font-size: 24px;
-  }
-
-  .hero-content p {
-    font-size: 14px;
-  }
-} */
-
-/* HeroSection.css */
-
-/* HeroSection.css */
-
 .hero-section {
-  background-image:url('../components/HeroImage.jpeg'); /* Path to your image in the public folder */
+  background-image:url('../components/HeroImage.jpeg'); 
   background-size: cover;
   background-position: center;
-  height: 80vh; /* Adjust height as needed */
+  height: 80vh; 
   display: flex;
   justify-content: center;
   align-items: center;
