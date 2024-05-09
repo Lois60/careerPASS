@@ -20,19 +20,19 @@ export const RegisterForm = () => {
 		try {
 			setLoading(true);
 			const response = await fetch(
-				"https://psychometric-assessment-6di1.onrender.com/register",
-				{
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify({
-						name,
-						email,
-						location,
-					}),
-				}
-			);
+        "https://psychometric-assessment-zcdf.onrender.com/register",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name,
+            email,
+            location,
+          }),
+        }
+      );
 			const data = await response.json();
 			console.log(data);
 			if (response.ok) {

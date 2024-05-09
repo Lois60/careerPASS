@@ -1,1 +1,1 @@
-export const BASE_URL = "https://psychometric-assessment-6di1.onrender.com";
+export const BASE_URL = "https://psychometric-assessment-zcdf.onrender.com";

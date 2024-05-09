@@ -32,12 +32,12 @@ export const Header = () => {
               <Link to="/About-Us">About us</Link>
             </li>
 
-            <li>
-              <Link to="/Learning-Tracks">Learning tracks</Link>
-            </li>
             {/* <li>
-              <Link to="/Contact-Us">Contact Us</Link>
+              <Link to="/Learning-Tracks">Learning tracks</Link>
             </li> */}
+            <li>
+              <Link to="/Contact-Us">Contact Us</Link>
+            </li>
           </ul>
           <div className="button-container">
             <Button

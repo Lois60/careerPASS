@@ -7,7 +7,6 @@ export const CognitiveAbility = () => {
   const [questions, setQuestions] = useState([]);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
   const [responses, setResponses] = useState({ cognitive: [] });
-  
 
   const navigate = useNavigate();
 
