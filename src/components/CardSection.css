@@ -1,31 +1,33 @@
 .card-section {
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: #DFDDDD;
+  background-color: #dfdddd;
 }
 
 .card-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-content: space-between;
+  gap: 1rem;
 }
 
-.card-row .card {
-  flex-basis: calc(50% - 10px);
-}
-
+/* .card-row .card {
+  flex-basis: calc(55% - 10px);
+} */
 
 @media (max-width: 768px) {
   .card-row {
     flex-direction: column;
   }
 }
-.call-action{
-    text-align: center;
-    padding-bottom: 30px;
-   
-    
+.call-action {
+  text-align: center;
+  padding-bottom: 30px;
 }
-.class-text{
-    text-align: center;
+.class-text {
+  text-align: center;
 }

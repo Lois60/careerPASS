@@ -1,25 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Header.css';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom"
+
+import "./Header.css";
 import { MainLogo } from "../components/Logo.jsx";
 import { Button } from "../components/Button.jsx";
-
+import DropdownMenu from "./DropdownMenu.jsx";
 
 export const Header = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/RegisterForm");
+  };
 
   return (
     <header className="header">
       <div className="header-content">
         <div className="logo">
-          <Link to="/">
-            <MainLogo />
-          </Link>
+          <div className="logoImg">
+            <Link to="/">
+              <MainLogo />
+            </Link>
+          </div>
           <Link to="/" className="para-ca">
-            CareerPASS
+            <h3>CareerPASS</h3>
           </Link>
-          {/* <Link to='/'>
-          <p>CareerPASS</p>
-          </Link> */}
         </div>
 
         <div className="header-items">
@@ -29,23 +34,23 @@ export const Header = () => {
           </li> */}
 
             <li>
-              <Link to="/About-Us">About us</Link>
+              <Link to="/About-Us">
+                About <span className="lg-text">us</span>
+              </Link>
             </li>
 
             {/* <li>
               <Link to="/Learning-Tracks">Learning tracks</Link>
             </li> */}
             <li>
-              <Link to="/Contact-Us">Contact Us</Link>
+              <DropdownMenu />
             </li>
           </ul>
           <div className="button-container">
-            <Button
-              onClick={() => (window.location.href = "/RegisterForm")}
-              children="Take Assessment"
-            />
+            <Button onClick={handleNavigate} children="Get Started" />
           </div>
         </div>
+   
       </div>
     </header>
   );

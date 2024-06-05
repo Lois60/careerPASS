@@ -78,7 +78,7 @@ export const Magination = () => {
 							)}
 							<br />
 							<div className='options'>
-								{Array.from({ length: 4 }).map((_, optionIndex) => (
+								{Array.from({ length: 3 }).map((_, optionIndex) => (
 									<div className='option' key={optionIndex}>
 										<input
 											type='radio'

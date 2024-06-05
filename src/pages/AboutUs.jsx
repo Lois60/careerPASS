@@ -4,14 +4,18 @@ export const AboutUs = () => {
   return (
     <section className="about-us">
       <div className="about-pic">
-        <img src="./AboutPic.png" />
-      </div>
-      <div className="welcome-about">
-        <div className="welcome-text">
-          <h2>Welcome To CareerPASS</h2>
-          <p>Find Out Your Unique Strength</p>
+        <div className="aboutImage">
+          <img src="./AboutPic.png" alt="about" />
+        </div>
+
+        <div className="welcome-about">
+          <div className="welcome-text">
+            <h2>Welcome To CareerPASS</h2>
+            <p>Find Out Your Unique Strength</p>
+          </div>
         </div>
       </div>
+
       <div className="about-text">
         <p className="about-para">
           CareerPASS Psychometric Assessment is designed to assist applicants in

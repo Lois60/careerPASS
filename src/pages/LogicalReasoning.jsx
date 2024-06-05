@@ -4,55 +4,55 @@ import { BASE_URL } from "../utils/Constants";
 import { useEffect, useState } from "react";
 
 export const LogicalReasoning = () => {
-	const navigate = useNavigate();
-	const location = useLocation();
-	const { responses: answers } = location.state;
-	const [questions, setQuestions] = useState([]);
-	const [filteredQuestions, setFilteredQuestions] = useState([]);
-	const [responses, setResponses] = useState({ logical:[], ...answers });
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { responses: answers } = location.state;
+  const [questions, setQuestions] = useState([]);
+  const [filteredQuestions, setFilteredQuestions] = useState([]);
+  const [responses, setResponses] = useState({ logical: [], ...answers });
 
-	const fetchQuestions = async () => {
-		try {
-			const response = await fetch(BASE_URL + "/getAllQuestions", {
-				method: "GET",
-				headers: {
-					"Access-Control-Allow-Origin": "*",
-				},
-			});
-			const data = await response.json();
-			setQuestions(data);
-		} catch (error) {
-			console.log(error);
-		}
-	};
+  const fetchQuestions = async () => {
+    try {
+      const response = await fetch(BASE_URL + "/getAllQuestions", {
+        method: "GET",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      });
+      const data = await response.json();
+      setQuestions(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-	const filterQuestions = (category) => {
-		setFilteredQuestions(
-			questions.filter((question) => question.category === category)
-		);
-	};
+  const filterQuestions = (category) => {
+    setFilteredQuestions(
+      questions.filter((question) => question.category === category)
+    );
+  };
 
-	useEffect(() => {
-		fetchQuestions();
-	}, []);
+  useEffect(() => {
+    fetchQuestions();
+  }, []);
 
-	useEffect(() => {
-		filterQuestions("Logical Reasoning");
-	}, [questions]);
+  useEffect(() => {
+    filterQuestions("Logical Reasoning");
+  }, [questions]);
 
-	const handleOptionChange = (index, answer, questionId) => {
-		const updatedResponses = [...responses.logical];
+  const handleOptionChange = (index, answer, questionId) => {
+    const updatedResponses = [...responses.logical];
 
-		updatedResponses[index] = { questionId, answer };
-		console.log({ ...responses, logical: updatedResponses });
-		setResponses({ ...responses, logical: updatedResponses });
-	};
+    updatedResponses[index] = { questionId, answer };
+    console.log({ ...responses, logical: updatedResponses });
+    setResponses({ ...responses, logical: updatedResponses });
+  };
 
-	const navigateToNextSection = () => {
-		navigate("/EmotionalStability", { state: { responses } });
-	};
+  const navigateToNextSection = () => {
+    navigate("/EmotionalStability", { state: { responses } });
+  };
 
-	return (
+  return (
     <section className="cog-ability">
       <div className="cog-header">
         <p>
@@ -73,7 +73,7 @@ export const LogicalReasoning = () => {
               </h4>
               {question.image_path && (
                 <img
-                  style={{ marginLeft: "-50px", width: "50%" }}
+                  style={{ width: "50%" }}
                   src={question.image_path}
                   alt={`Question ${question.question_id}`}
                 />

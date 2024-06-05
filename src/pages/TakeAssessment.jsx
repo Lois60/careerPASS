@@ -1,23 +1,27 @@
 import "./TakeAssessment.css";
-import { IoIosArrowBack} from "react-icons/io";
-import { Link } from "react-router-dom";
+import { IoIosArrowBack } from "react-icons/io";
+import { Link, useNavigate } from "react-router-dom";
 export const TakeAssessment = () => {
+  const navigate = useNavigate();
 
-  
+  const navigateToCognitiveAbility = () => {
+    navigate("/CognitiveAbility");
+  };
   return (
     <section className="assessment-text">
       <div className="assessment-header">
-        <h4>
-          {" "}
+        <div className="assessment-icon">
           <IoIosArrowBack />
-          Welcome to CareerPASS Psychometric Assessment!{" "}
-        </h4>
-        <p>
-          This assessment is designed to help us understand your unique
-          strengths, preferences, and learning styles. This will allow <br /> us
-          to tailor a personalized learning experience within the Women
-          Techsters Fellowship.
-        </p>
+        </div>
+        <div>
+          <h4> Welcome to CareerPASS Psychometric Assessment! </h4>
+          <p>
+            This assessment is designed to help us understand your unique
+            strengths, preferences, and learning styles. This will allow <br />{" "}
+            us to tailor a personalized learning experience within the Women
+            Techsters Fellowship.
+          </p>
+        </div>
       </div>
       <div className="assessment-items">
         <div className="ass-title">
@@ -92,7 +96,6 @@ export const TakeAssessment = () => {
             {""}
             <Link to="/Contact-Us">here</Link>
           </p>
-         
         </div>
         <br />
         <div className="ass-title">
@@ -107,10 +110,7 @@ export const TakeAssessment = () => {
       </div>
 
       <div>
-        <button
-          className="ass-continue"
-          onClick={() => (window.location.href = "/CognitiveAbility")}
-        >
+        <button className="ass-continue" onClick={navigateToCognitiveAbility}>
           Start Test
         </button>
       </div>

@@ -16,10 +16,10 @@ import { Magination } from "./pages/Magination.jsx";
 import { TechnicalAptitude } from "./pages/TechnicalAptitude.jsx";
 import { SkillsAssessment } from "./pages/SkillsAssessment.jsx";
 import { RegisterForm } from "./pages/RegisterForm.jsx";
-
 import { ThankYou } from "./pages/ThankYou.jsx";
 import { Terms } from "./pages/Terms.jsx";
 import { Recommendations } from "./pages/Recommendations.jsx";
+
 
 // import { Register } from "./pages/Register.jsx";
 
@@ -43,8 +43,8 @@ const router = createBrowserRouter(
 			<Route path='/SkillsAssessment' element={<SkillsAssessment />} />
 			<Route path='/Recommendations' element={<Recommendations />} />
 			<Route path='/RegisterForm' element={<RegisterForm />} />
-
 			<Route path='/ThankYou' element={<ThankYou />} />
+
 			<Route path='/Terms' element={<Terms />} />
 		</Route>
 	)

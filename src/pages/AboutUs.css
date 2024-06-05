@@ -1,66 +1,80 @@
 .about-pic {
-  height: 600px;
-  overflow: hidden;
+  width: 100%;
+  /* overflow: hidden; */
   position: relative;
-  margin-left: -5px;
- 
-  
+  margin-bottom: 3rem;
+}
+
+.aboutImage {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.aboutImage img {
+  width: 100%;
 }
 
 .welcome-about {
   text-align: center;
   margin: 0 auto;
   padding: 0;
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   /* margin-top: -70px; */
-  width: 30%;
+  width: 100%;
+  max-width: 500px;
 }
 
 .welcome-about .welcome-text {
   background-color: white;
-  position: absolute;
-  margin-top: -165px;
-  margin-right: 60px;
-  font-family: 'poppins';
-  /* padding: 20px 20px; */
-  width: 500px;
+  width: 100%;
+  padding: 0.5rem 0;
   border-radius: 10px 0 10px 0;
-  color: #74147c;
+  color: #000;
   font-size: larger;
   font-weight: bolder;
-  /* height: 177px; */
+  margin: 0;
 }
 
-.about-para  {
+.about-para {
   text-align: left;
   padding-left: 70px;
   font-size: 15px;
   color: #414141;
-  font-family: 'poppins';
-
 }
 
 .welcome-text h2 {
   font-weight: bold;
   font-size: 30px;
-  font-family: 'poppins';
+  margin: 0;
 }
-.sec-title{
-    text-align: left;
+
+.welcome-text p {
+  margin: 0;
+  margin-top: 8px;
+}
+.sec-title {
+  text-align: left;
   padding-left: 70px;
   color: #414141;
   font-size: 17px;
-  font-family: 'poppins';
-
+  font-family: "poppins";
 }
 
-.learn-btn{
-    padding: 10px;
-    margin-left: 70px;
-    margin-bottom: 70px;
-    color: white;
-    background-color:  #74147c;
-    font-family: 'poppins';
-    font-weight: bold;
-    border: none;
+.learn-btn {
+  padding: 10px;
+  margin-left: 70px;
+  margin-bottom: 70px;
+  color: white;
+  background-color: #74147c;
+  font-family: "poppins";
+  font-weight: bold;
+  border: none;
   border-radius: 4px;
 }

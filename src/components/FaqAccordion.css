@@ -1,46 +1,36 @@
-
 .faq-section {
-    padding-left: 20px ; 
-    padding-top: 30px;
-  
-    font-family: 'poppins';
-  }
-  
-  .faq-section .faq-text,
-  .faq-section .faq-para {
-    padding-left: 50px; 
-    font-size: 14px;
-    color: #414141;
-   
-    
-  }
-  .faq-section .faq-text{
-    font-weight: bold;
-    font-size: 30px;
-    font-family: 'poppins';
-    
-  }
-  .send-btn{
-    padding: 10px;
-    color: white;
-    background-color:  #74147c;
-    font-family: 'poppins';
-    font-weight: bold;
-    border: none;
-  border-radius: 20px 0px 20px 0px;
-  }
+  padding: 30px 0 0 20px;
+}
 
-  .contact-bell{
-    padding-left: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    
-    margin-left: 50px;
-    
-  }
-  .contact-bell p{
-    color: #121212;
-    margin-left: 30px;
-    margin-top: 10px;
-  }
-  
+.faq-section .faq-text,
+.faq-section .faq-para {
+  font-size: 14px;
+  color: #414141;
+  padding-left: 30px;
+  margin-left: 0;
+}
+.faq-section .faq-text {
+  font-weight: bold;
+  font-size: 30px;
+}
+.send-btn {
+  padding: 10px;
+  color: black;
+  /* background-color: #74147c; */
+  font-weight: bold;
+  border: none;
+  border-radius: 20px 0px 20px 0px;
+}
+
+.contact-bell {
+  padding-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  margin-left: 50px;
+}
+.contact-bell p {
+  color: #121212;
+  margin-left: 30px;
+  margin-top: 10px;
+}

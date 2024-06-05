@@ -1,41 +1,95 @@
 .records {
   display: flex;
-background-color: #F9F7F7;
+  background-color: #f9f7f7;
   height: 300px;
-}
-.records .record-container {
-  display: flex;
-  gap: 200px;
+  overflow-x: hidden;
+  padding-top: 80px;
+  justify-content: center;
   align-items: center;
-  padding: 0;
-  justify-content: space-between;
-  margin: 0 auto;
-  
-  
-}
-.records .record-container h3 {
-  font-family: 'poppins';
-  font-size: 26px;
-  font-weight: 600;
-  line-height: 69.6px;
-  text-align: center;
 }
 
-.records .record-container p {
-  font-family: 'poppins';
-  font-size: 18px;
+.records .record-container {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  background-color: #ffffff;
+  border-radius: 24px;
+}
+
+.record-container {
+  width: 100%;
+  gap: 2rem;
+  max-width: 90.75rem;
+  padding: 0 0.25rem;
+  height: 228px;
+}
+.record-container h3 {
+  font-family: "Inter";
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 57.6px;
+  text-align: center;
+  color: #313131;
+}
+
+.record-container p {
+  font-family: "Inter";
+  font-size: 0.8rem;
   font-weight: 400;
   text-align: center;
-  margin-top: -30px;
+  color: #313131;
+  /* margin-top: -30px; */
 }
-.icon-record{
+
+.iconDiv {
+  display: flex;
+  justify-content: center;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  width: 3.75rem;
+  height: 3.75rem;
   align-items: center;
-  margin-left: 50px;
- font-size: 35px;
 }
+
+.icon-record {
+  align-items: center;
+  font-size: 35px;
+}
+
 .record-heading {
-  margin-top: -14px;
+  margin: 0;
 }
-.record-para{
-margin-top: -25px;
+
+.record-para {
+  margin: 0;
+}
+
+.record-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+@media (min-width: 748px) {
+  .record-container h3 {
+    font-family: "Inter";
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .record-container {
+    padding: 48px 110px 48px 110px;
+  }
+  .records {
+    height: 438px;
+  }
+  .record-container p {
+    font-size: 1rem;
+  }
+
+  .iconDiv {
+    height: 4.375rem;
+    width: 4.375rem;
+  }
 }

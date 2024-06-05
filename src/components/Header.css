@@ -1,75 +1,133 @@
-
 .header {
-  padding: 10px 20px;
   background-color: white;
- 
-
-  height:6Opx; 
-
-  top: 25px;
-  left: 109px;
-  gap: 105px;
- 
   overflow: hidden;
+  width: 100%;
+  margin-bottom: 5rem;
 }
 
 .header-content {
+  background-color: white;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.85rem;
+  z-index: 2;
+  position: fixed;
+  padding: 0 3px;
+  height: 5rem;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  margin-left: 60px;
-  
+  gap: 3px;
+}
+
+.logoImg {
+  height: 45px;
+  width: 45.5px;
 }
 
 .logo .para-ca {
-  margin-left: 10px;
   color: black;
-  font-family: 'poppins';
-  font-size: 18px;
+  font-family: "Montserrat";
+  font-size: 22px;
   font-weight: 600;
   line-height: 28.8px;
-  text-align: left;
   text-decoration: none;
-  
+}
+.para-ca {
+  display: none;
 }
 
 .header-items {
+  justify-content: space-between;
   display: flex;
   align-items: center;
-  /* margin-right: 150px; */
-  
+  gap: 2rem;
+
 }
 
 .header-items ul {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   margin: 0;
   padding: 0;
-  
+}
+.menu {
+  width: 12px;
+  height: 12px;
 }
 
 .header-items ul li {
   margin: 0;
-  font-family: 'poppins';
   font-size: 14px;
   color: #323232;
   line-height: 19.2px;
   text-align: left;
   font-weight: 600;
+  display: flex;
 }
 
 .header-items ul li a {
   text-decoration: none;
+  width: 100%;
   color: #333;
 }
 
-.button-container {
-  margin-left: 200px;
+.lg-text {
+  display: none;
 }
 
+.button-container {
+  width: 100%;
+}
+
+.drop-down-parent {
+  cursor: pointer;
+  display: flex;
+  align-items: center ;
+}
+
+@media (min-width: 768px) {
+  .para-ca {
+    display: block;
+  }
+
+  .header {
+    padding: 0 10px;
+  }
+
+  .lg-text {
+    display: inline-block;
+  }
+  .header-content {
+    padding-left: 100px;
+  }
+
+  .logoImg {
+    width: 55.5px;
+  }
+  .menu {
+    display: none;
+    cursor: pointer;
+  }
+  .header-items {
+    width: 550px;
+    display: flex;
+  }
+
+  .header-items ul li a {
+    text-wrap: nowrap;
+  }
+}

@@ -1,11 +1,14 @@
-
-
-
 import { HiArrowSmRight } from "react-icons/hi";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./HeroSection.css";
 
 export const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/RegisterForm");
+  };
   return (
     <div className="hero-section">
       <div className="overlay"></div>
@@ -19,14 +22,10 @@ export const HeroSection = () => {
           Get a detailed assessment of your unique strength, and <br />{" "}
           potential area for development in your Tech Career.
         </p>
-        <br />
-        <button
-          onClick={() => (window.location.href = "/RegisterForm")}
-          className="hero-btn"
-        >
-          Take Assessment
+        <button onClick={handleNavigate} className="hero-btn">
+          Take Assessment Test
+          <HiArrowSmRight className="arrow" />
         </button>
-        <HiArrowSmRight className="arrow" />
       </div>
     </div>
   );
