@@ -13,7 +13,7 @@ export const Recommendations = () => {
   const fetchLogicRecommendations = async () => {
     try {
       const response = await fetch(
-        BASE_URL + "/math-logic-scores-recommendation",
+        BASE_URL + "/scores-recommendations",
         {
           method: "POST",
           headers: {

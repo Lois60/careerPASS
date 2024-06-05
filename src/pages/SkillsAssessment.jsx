@@ -34,7 +34,7 @@ export const SkillsAssessment = () => {
 
 	const handleSubmit = async () => {
 		try {
-			const response = await fetch(BASE_URL + "/submit", {
+			const response = await fetch(BASE_URL + "/scores-recommendations", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

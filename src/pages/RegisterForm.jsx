@@ -21,7 +21,7 @@ export const RegisterForm = () => {
       setLoading(true);
       console.log("Sending registration data...");
       const response = await fetch(
-        "https://psychometric-assessment-zcdf.onrender.com/register",
+        "https://psychometric-assessment-1.onrender.com/register",
         {
           method: "POST",
           headers: {
