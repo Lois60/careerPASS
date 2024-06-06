@@ -1,10 +1,14 @@
 import { BASE_URL } from "../utils/Constants";
 import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const PersonalityTraits = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { responses: answers } = location.state;
   const [questions, setQuestions] = useState([]);
   const [filteredQuestions, setFilteredQuestions] = useState([]);
-  const [responses, setResponses] = useState({});
+  const [responses, setResponses] = useState({ logical: [], ...answers });
 
   const fetchQuestions = async () => {
     try {
@@ -54,6 +58,10 @@ export const PersonalityTraits = () => {
     }
   }, []);
 
+  const navigateToNextSection = () => {
+    navigate("/EmotionalStability", { state: { responses } });
+  };
+
   return (
     <section className="cog-ability">
       <div className="cog-header">
@@ -69,7 +77,7 @@ export const PersonalityTraits = () => {
       <div>
         {filteredQuestions.map((question, index) => (
           <div className="input-text" key={index}>
-            <h3>Question {question.questionNo}</h3>
+            <h3>Question {index}</h3>
             <h4 style={{ marginBottom: "20px" }}>{question.question_text}</h4>
             <input
               type="radio"
@@ -112,14 +120,13 @@ export const PersonalityTraits = () => {
       <div className="btn-container">
         <button
           className="previous"
-          onClick={() => (window.location.href = "/LogicalReasoning")}
+          onClick={() =>
+            navigate("/LogicalReasoning", { state: { responses } })
+          }
         >
           Previous
         </button>
-        <button
-          className="next"
-          onClick={() => (window.location.href = "/EmotionalStability")}
-        >
+        <button className="next" onClick={navigateToNextSection}>
           Next
         </button>
       </div>

@@ -1,0 +1,133 @@
+.feedback__container {
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  background-color: #f1e6e6;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  font-family: "Inter";
+  overflow-x: hidden;
+}
+
+.feedback__form,
+.takeAction__container {
+  display: flex;
+  padding: 0 1rem;
+  width: 100%;
+  flex-direction: column;
+  padding: 3rem 2px 0 2px;
+}
+
+.feedback__form .details,
+.takeAction__container .details {
+  max-width: 300px;
+}
+
+.feedback__container h2 {
+  font-size: 1.25rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0;
+  font-family: "Inter";
+}
+
+.feedback__container p {
+  font-size: 0.8rem;
+  font-family: "Inter";
+  line-height: 24px;
+
+  /* text-wrap: wrap; */
+}
+
+.feedback-textarea {
+  max-width: 400px;
+  display: flex;
+  width: 280px;
+  flex-basis: 280px;
+  max-height: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.feedback-textarea:focus-visible {
+  outline: none;
+  border: 1px solid #74147c;
+}
+
+.feedback__star {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.feedback__submit-button,
+.takeAction__submit-button {
+  width: 80%;
+  padding: 2rem 0;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.feedback__submit-button button,
+.takeAction__submit-button button {
+  background-color: #74147c;
+  padding: 0.75rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.feedback__submit-button button:hover,
+.takeAction__submit-button button:hover {
+  background-color: #fff;
+  border: 1px solid #74147c;
+  color: #74147c;
+}
+
+.feedback__svg {
+  display: flex;
+}
+
+@media (min-width: 568px) {
+  .feedback__container {
+    gap: 1.3rem;
+  }
+
+  .feedback__form,
+  .takeAction__container {
+    padding: 3rem 0.5rem 0 2rem;
+  }
+
+  .feedback__container h2 {
+    font-size: 1.7rem;
+  }
+
+  .feedback-textarea {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 350px) {
+  .feedback__container .details {
+    font-size: 1rem;
+    max-width: 613px;
+    width: 100%;
+  }
+
+  .feedback-textarea {
+    width: 100%;
+    max-width: 350px;
+  }
+}

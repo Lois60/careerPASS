@@ -20,7 +20,7 @@ export const AssessmentContainer = () => {
 
       // Submit all responses
       const response = await fetch(
-        "https://psychometric-assessment-y97h.onrender.com/submit",
+        "https://psychometric-assessment-1.onrender.com/scores-recommendations",
         {
           method: "POST",
           headers: {

@@ -1,14 +1,145 @@
-.reco-scores{
-    text-align: center;
-    margin: 0 auto;
-    max-width: 700px;
-    padding-bottom: 20px;
+.recommendation__container {
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
 }
-.reco-header h1{
- background-color: #3E2342;
- padding: 20px;
- color: white;
+
+.reco-scores {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+  padding-bottom: 20px;
 }
-.reco-header p{
-    text-align: left;
+.reco-header h1 {
+  background-color: #3e2342;
+  padding: 20px;
+  color: white;
+}
+.reco-header p {
+  text-align: left;
+}
+
+.recommendation__svg {
+  max-width: 46.875rem;
+}
+
+.recommendation__svg-container {
+  display: flex;
+  padding: 1rem 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.recommendation__header {
+  margin: 2rem 0;
+  background-color: #3e2342;
+  color: #ffff;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.recommendation__header h2 {
+  font-size: 1rem;
+}
+
+.recommendations__progress-bars {
+  max-width: 900px;
+  padding: 1.7rem 0;
+}
+
+.best_fit,
+.alternative_fit {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #74147c;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  margin: 4rem 0 2rem 0;
+  border-radius: 0%;
+  min-height: 4rem;
+}
+
+.best_fit div,
+.alternative_fit div {
+  margin: 0;
+  width: 70%;
+}
+
+.best_fit h2,
+.alternative_fit h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.alternative_fit {
+  background-color: #3e2342;
+}
+
+.best_fit p,
+.alternative_fit p {
+  left: 0.8rem;
+  top: 20%;
+  line-height: 2rem;
+  margin: 0;
+  /* transform: translateY(-50%); */
+}
+
+.recommendation__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0;
+  gap: 1rem;
+}
+
+.recommendation__result-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.recommendation__result-buttons button {
+  background-color: #74147c;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+}
+
+.recommendation__buttons .arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #74147c;
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.recommendation__buttons button:hover {
+  border: 1px solid #74147c;
+  background-color: #fff;
+  color: #74147c;
+}
+
+.recommendations__progress-bar {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 658px) {
+  .recommendation__container {
+    padding: 0 4rem;
+  }
+
+  .recommendations__progress-bar {
+    font-size: 1.2rem;
+  }
+
+  .recommendation__header h2 {
+    font-size: 1.5rem;
+  }
 }

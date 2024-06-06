@@ -1,0 +1,22 @@
+.progressBar__container {
+  width: 100%;
+  background-color: #9b98983d;
+  height: 22px;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.progressBar__inner {
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.recommendations__result-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.recommendations__progress-bars {
+  display: grid;
+  gap: 0.8rem;
+}

@@ -3,53 +3,53 @@ import { BASE_URL } from "../utils/Constants";
 import { useEffect, useState } from "react";
 
 export const EmotionalStability = () => {
-	const navigate = useNavigate();
-	const location = useLocation();
-	const { responses: answers } = location.state;
-	const [questions, setQuestions] = useState([]);
-	const [filteredQuestions, setFilteredQuestions] = useState([]);
-	const [responses, setResponses] = useState({ ...answers, emotional: [] });
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { responses: answers } = location.state;
+  const [questions, setQuestions] = useState([]);
+  const [filteredQuestions, setFilteredQuestions] = useState([]);
+  const [responses, setResponses] = useState({ ...answers, emotional: [] });
 
-	const fetchQuestions = async () => {
-		try {
-			const response = await fetch(BASE_URL + "/getAllQuestions", {
-				method: "GET",
-				headers: {
-					"Access-Control-Allow-Origin": "*",
-				},
-			});
-			const data = await response.json();
-			setQuestions(data);
-		} catch (error) {
-			console.log(error);
-		}
-	};
+  const fetchQuestions = async () => {
+    try {
+      const response = await fetch(BASE_URL + "/getAllQuestions", {
+        method: "GET",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+      });
+      const data = await response.json();
+      setQuestions(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
-	const filterQuestions = (categories) => {
-		setFilteredQuestions(
-			questions.filter((question) => categories.includes(question.category))
-		);
-	};
+  const filterQuestions = (categories) => {
+    setFilteredQuestions(
+      questions.filter((question) => categories.includes(question.category))
+    );
+  };
 
-	useEffect(() => {
-		fetchQuestions();
-	}, []);
+  useEffect(() => {
+    fetchQuestions();
+  }, []);
 
-	useEffect(() => {
-		filterQuestions(["Emotional Stability", "Agreeableness vs. Assertiveness"]);
-	}, [questions]);
+  useEffect(() => {
+    filterQuestions(["Emotional Stability", "Agreeableness vs. Assertiveness"]);
+  }, [questions]);
 
-	const handleOptionChange = (index, answer, questionId) => {
-		const updatedResponses = [...responses.emotional];
-		updatedResponses[index] = { questionId, answer };
-		setResponses({ ...responses, emotional: updatedResponses });
-	};
+  const handleOptionChange = (index, answer, questionId) => {
+    const updatedResponses = [...responses.emotional];
+    updatedResponses[index] = { questionId, answer };
+    setResponses({ ...responses, emotional: updatedResponses });
+  };
 
-	const navigateToNextSection = () => {
-		navigate("/Magination", { state: { responses } });
-	};
+  const navigateToNextSection = () => {
+    navigate("/Magination", { state: { responses } });
+  };
 
-	return (
+  return (
     <section className="cog-ability">
       <div className="cog-header">
         <p>
@@ -110,7 +110,7 @@ export const EmotionalStability = () => {
         <button
           className="previous"
           onClick={() =>
-            navigate("/LogicalReasoning", { state: { responses } })
+            navigate("/PersonalityTraits", { state: { responses } })
           }
         >
           Previous

@@ -49,7 +49,7 @@ export const LogicalReasoning = () => {
   };
 
   const navigateToNextSection = () => {
-    navigate("/EmotionalStability", { state: { responses } });
+    navigate("/PersonalityTraits", { state: { responses } });
   };
 
   return (
