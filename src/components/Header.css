@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 0.85rem;
-  z-index: 2;
+  z-index: 10;
   position: fixed;
   padding: 0 3px;
   height: 5rem;
@@ -51,7 +51,6 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-
 }
 
 .header-items ul {
@@ -96,7 +95,7 @@
 .drop-down-parent {
   cursor: pointer;
   display: flex;
-  align-items: center ;
+  align-items: center;
 }
 
 @media (min-width: 768px) {

@@ -3,7 +3,7 @@
   background-color: #f9f7f7;
   height: 300px;
   overflow-x: hidden;
-  padding-top: 80px;
+  /* padding-top: 2rem; */
   justify-content: center;
   align-items: center;
 }

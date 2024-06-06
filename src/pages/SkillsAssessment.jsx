@@ -89,7 +89,7 @@ export const SkillsAssessment = () => {
       <div className="question-container">
         {filteredQuestions.map((question, index) => (
           <div className="question-fetch" key={index}>
-            <h3 className="question-number">Question {question.questionNo}</h3>
+            <h3 className="question-number">Question {index + 1}</h3>
             <div className="question-info">
               <h4 className="question-text" style={{ marginBottom: "20px" }}>
                 {question.question_text}
@@ -108,6 +108,9 @@ export const SkillsAssessment = () => {
                     question[`option${optionIndex + 1}`] && (
                       <div className="option" key={optionIndex}>
                         <input
+                          id={`${question.question_id}${
+                            question[`option${optionIndex + 1}`]
+                          }`}
                           type="radio"
                           name={`question${index}`}
                           value={question[`option${optionIndex + 1}`] || ""}
@@ -123,7 +126,11 @@ export const SkillsAssessment = () => {
                             )
                           }
                         />
-                        <label>
+                        <label
+                          htmlFor={`${question.question_id}${
+                            question[`option${optionIndex + 1}`]
+                          }`}
+                        >
                           {question[`option${optionIndex + 1}`] || ""}
                         </label>
                         <br />

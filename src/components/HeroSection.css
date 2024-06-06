@@ -2,12 +2,11 @@
   background-image: url("../assets/images/HeroImage.jpeg");
   background-size: cover;
   background-position: center;
-  height: 700px;
+  height: calc(100vh - 70px);
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: -1;
   padding-bottom: 1rem;
 }
 
@@ -20,7 +19,7 @@
   min-height: -moz-fit-content;
   min-height: fit-content;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
 }
 .hero-content h1 {
   line-height: 4rem;

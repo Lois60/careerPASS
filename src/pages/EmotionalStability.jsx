@@ -64,7 +64,7 @@ export const EmotionalStability = () => {
       <div className="question-container">
         {filteredQuestions.map((question, index) => (
           <div className="question-fetch input-text" key={index}>
-            <h3 className="question-number">Question {question.questionNo}</h3>
+            <h3 className="question-number">Question {index + 1}</h3>
             <div className="question-info">
               <h4 className="question-text" style={{ marginBottom: "20px" }}>
                 {question.question_text}
@@ -81,6 +81,9 @@ export const EmotionalStability = () => {
                 {Array.from({ length: 4 }).map((_, optionIndex) => (
                   <div className="option" key={optionIndex}>
                     <input
+                      id={`${question.question_id}${
+                        question[`option${optionIndex + 1}`]
+                      }`}
                       type="radio"
                       name={`question${index}`}
                       value={question[`option${optionIndex + 1}`]}
@@ -96,7 +99,13 @@ export const EmotionalStability = () => {
                         )
                       }
                     />
-                    <label>{question[`option${optionIndex + 1}`]}</label>
+                    <label
+                      htmlFor={`${question.question_id}${
+                        question[`option${optionIndex + 1}`]
+                      }`}
+                    >
+                      {question[`option${optionIndex + 1}`]}
+                    </label>
                     <br />
                   </div>
                 ))}

@@ -65,13 +65,16 @@ export const CognitiveAbility = () => {
       <div className="question-container">
         {filteredQuestions.map((question, index) => (
           <div className="question-fetch" key={index}>
-            <h3 className="question-number">Question {question.questionNo}</h3>
+            <h3 className="question-number">Question {index + 1}</h3>
             <div className="question-info">
               <h4 className="question-text">{question.question_text}</h4>
               <div className="options">
                 {Array.from({ length: 4 }).map((_, optionIndex) => (
                   <div className="option" key={optionIndex}>
                     <input
+                      id={`${question.question_id}${
+                        question[`option${optionIndex + 1}`]
+                      }`}
                       type="radio"
                       value={question[`option${optionIndex + 1}`]}
                       checked={
@@ -86,7 +89,13 @@ export const CognitiveAbility = () => {
                         )
                       }
                     />
-                    <label>{question[`option${optionIndex + 1}`]}</label>
+                    <label
+                      htmlFor={`${question.question_id}${
+                        question[`option${optionIndex + 1}`]
+                      }`}
+                    >
+                      {question[`option${optionIndex + 1}`]}
+                    </label>
                   </div>
                 ))}
               </div>

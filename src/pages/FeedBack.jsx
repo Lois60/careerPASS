@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Star from "../components/Star";
 import ThankYouSVG from "../components/ThankYouSVG";
 import { FaArrowUpLong } from "react-icons/fa6";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const FeedBack = () => {
   const [rating, setRating] = useState(0);
@@ -72,7 +72,12 @@ const FeedBack = () => {
           <p>Start in any of our program</p>
         </div>
         <div className="takeAction__submit-button">
-          <button type="button">Start my Career</button>
+          <button
+            type="button"
+            onClick={() => (window.location.href = "https://tech4dev.com")}
+          >
+            Start my Career
+          </button>
           <button
             type="button"
             className="circle"
